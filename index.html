@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        var prefix = window.location.hostname.split('.')[0];
+        switch (prefix) {
+            case 'semenkovich':
+                break;
+            case 'clay':
+                location.href = 'http://endo.wustl.edu/semenkovich-lab/';
+                break;
+            case 'janice':
+                location.href = 'http://wuphysicians.wustl.edu/physician2.aspx?PhysNum=2807';
+                break;
+            case 'katherine':
+                location.href = 'https://www.ncbi.nlm.nih.gov/pubmed/?term=semenkovich+k%5Bau%5D';
+                break;
+            case 'tara':
+                location.href = 'http://gsres.wustl.edu/Profiles/Residents-Profiles/SkebbaTara';
+                break;
+        }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-45476333-1', {'siteSpeedSampleRate': 100, 'cookieDomain': 'semenkovich.com'});
+      ga('require', 'linker');
+      ga('linker:autoLink', ['semenkovich.com']);
+      ga('send', 'pageview');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +50,8 @@
             -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
         }
+        /* Fade in */
+
         @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
@@ -45,8 +76,27 @@
             from { opacity: 0; }
             to   { opacity: 1; }
         }
+
+        /* Round Pics */
+        .img-circle {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        a:link, a:visited, a:hover, a:active  {
+            color: #DDD;
+            text-decoration:none;
+        }
     </style>
 </head>
 <body>
-{first name}@semenkovich.com
+<div>
+    <h4><a href="https://clay.semenkovich.com/">clay.semenkovich.com</a></h4>&middot;
+    <h4><a href="https://janice.semenkovich.com/">janice.semenkovich.com</a></h4>&middot;
+    <h4><a href="https://katherine.semenkovich.com/">katherine.semenkovich.com</a></h4>&middot;
+    <h4><a href="https://nick.semenkovich.com/">nick.semenkovich.com</a></h4>&middot;
+    <h4><a href="https://tara.semenkovich.com/">tara.semenkovich.com</a></h4>
+</div>
 </body></html>
